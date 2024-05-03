@@ -10,6 +10,11 @@
 :root{
     --bgOrange: #e84949;
 }
+.read{
+   
+    width: 100%;
+  
+}
 
 
 #wrapper{
@@ -325,7 +330,7 @@ a{
 .project-card{
     width: 90%;
     height:550px;
-    background-image: url(car.jpg);
+    background-image: url(portfolio_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position:relative;
@@ -436,18 +441,18 @@ a{
     transform: scaleX(1.1);
 }
 #project1{
-    background-image: url(car.jpg);
+    background-image: url(portfolio_bg.jpg);
 }
 #project2{
     margin-left: 120px;
-    background-image: url(p2.jpg);
+    background-image: url(meal_bg.jpeg);
 }
 #project3{
-    background-image: url(p3.jpg);
+    background-image: url(pythonpro_bg.webp);
 }
 #project4{
     margin-left:120px;
-    background-image: url(p4.jpg);
+    background-image: url(fake_news_bg.jpeg);
 }
 
 @media(max-width:1300px){
