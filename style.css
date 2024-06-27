@@ -92,7 +92,7 @@ a{
     font-size: 7em;
     color: rgb(231,231,231);
     
-    bottom: -16%;
+    bottom: -21%;
     left:-5%;
     font-weight: bold;
     transition: all 3s;
@@ -113,7 +113,7 @@ a{
 .hero-section-sub-heading{
     font-size: 45px;
     line-height: 45px;
-
+    width: 70%;
 }
 .role{
     color: #4e45d5;
@@ -123,6 +123,7 @@ a{
     margin-top: 1rem;
     width: 70%;
     font-weight: 500 ;
+    text-align: justify; 
 }
 .btn-pink{
     width: 50%;
@@ -135,6 +136,7 @@ a{
     box-shadow: 5px 5px 7px 0px #00003f;
     position: relative;
     z-index: 1;
+    cursor: pointer;
 }
 .btn-pink::before{
     content: "";
@@ -156,7 +158,7 @@ a{
 
 .hero-section-right{
     position: relative;
-    width:50%;
+    width:70%;
 }
 .absolute{
     position: absolute;
@@ -386,7 +388,7 @@ a{
 .project-content{
     position: absolute;
     display: flex;
-    
+    justify-content: center;
     flex-direction: column;
     color: white;
     padding: 2em;
@@ -400,7 +402,7 @@ a{
 
 }
 .project-content-right{
-    right:10%;
+    right:5%;
 }
 .project-skill-container{
     width: 60%;
@@ -438,7 +440,7 @@ a{
     color:var(--bgOrange);  
 }
 .project-card:hover .project-content{
-    transform: scaleX(1.1);
+    transform: scaleX(1.065);
 }
 #project1{
     background-image: url(portfolio_bg.jpg);
@@ -452,7 +454,7 @@ a{
 }
 #project4{
     margin-left:120px;
-    background-image: url(fake_news_bg.jpeg);
+    background-image: url(Sentiment-Analysis_bg.webp);
 }
 
 @media(max-width:1300px){
@@ -686,5 +688,188 @@ footer{
 .icon-wrapper{
     display: flex;
     gap:1rem
+}
+
+.hero-section-left, .hero-section-right {
+    
+    min-width: 300px; /* Ensures sections do not shrink too small */
+    
+}
+
+/* Media Queries for responsiveness */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items div {
+        margin: 5px 0;
+    }
+    .hero-section {
+        width: 100%;
+        
+    }
+
+    .hero-section-heading {
+        font-size: 28px;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 22px;
+    }
+
+    .btn-pink {
+        padding: 0.5rem 1.5rem;
+        font-size: 16px;
+    }
+
+    .hero-section-left {
+        width: 90%;
+    }
+    .faded-text{
+        user-select:none;
+        font-size: 5em;
+        color: rgb(231,231,231);
+        
+        bottom: -13%;
+        left:-5%;
+        font-weight: bold;
+        transition: all 3s;
+    }
+
+    .project-card {
+        height: 300px;
+    }
+
+    .project-content {
+        width: 80%;
+    }
+    .skills-container{
+        
+        width:95%;
+        height: 190%;
+    }
+    .skills-logo{
+        width: 60px;
+        transition: all 0.5s;
+    }
+    .skills-logo:hover{
+        transform: scale(1.2);
+    }
+    .skill-heading{
+        font-size: 30px;
+        font-style: bold;
+        color:var(--bgOrange);
+        line-height: 30px;
+    }
+    .caps{
+        font-size: 60px;
+    }
+    .skill-subHeading{
+        margin-top: 1rem;
+        width: 85%;
+        text-align: left;
+    
+    }
+    .skill-subHeading p{
+         
+        margin:1px 0;
+    
+    }
+   
+    .skill-fade-text{
+        position: absolute;
+        font-size: 5em;
+        font-style: bold;
+        color: rgb(231,231,231);
+        bottom: -13.9%;
+        right: 0%;
+        user-select: none;
+        overflow-y: hidden;
+        
+    
+    }
+    .contactus-heading {
+        font-size: 2em;
+    }
+
+    .contactus-sub-heading {
+        font-size: 1.2rem;
+    }
+
+    .form {
+        width: 95%;
+        margin: 0.5rem 1rem;
+    }
+
+    .formfield {
+        font-size: 14px;
+    }
+
+    .sumbit-icon {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+
+    .footer-wrapper {
+        gap: 0.5rem;
+    }
+
+    .footer-faded-text {
+        font-size: 2em;
+    }
+
+    .link-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .icon-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+}
+    
+
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .hero-section-heading {
+        font-size: 32px;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 26px;
+    }
+
+    .btn-pink {
+        padding: 0.7rem 2rem;
+        font-size: 17px;
+    }
+
+    .hero-section-right {
+        width: 90%;
+    }
+
+    .project-card {
+        height: 450px;
+    }
+
+    .project-content {
+        width: 70%;
+    }
 }
 
