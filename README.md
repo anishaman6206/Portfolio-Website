@@ -2,3 +2,4 @@ Developed a dynamic personal portfolio website using HTML, CSS, and JS, used ani
 
 Highlighted all major projects, skills, coursework, contact information, and integrated social media links and GitHub repository links 
 
+Website URL: https://myportfoliowebsite07.netlify.app/
