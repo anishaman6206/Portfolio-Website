@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const navItems = document.querySelector(".nav-items");
+    const closeMenu = document.querySelector(".close-menu");
+    const navLinks = document.querySelectorAll(".nav-items div a");
+
+    hamburgerMenu.addEventListener("click", function() {
+        navItems.classList.toggle("active");
+        hamburgerMenu.classList.toggle("active");
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            navItems.classList.remove("active");
+            hamburgerMenu.classList.remove("active");
+        });
+    });
+});
+
+
 function SendMail() {
     let parms = {
         subject : document.getElementById("subject").value,
